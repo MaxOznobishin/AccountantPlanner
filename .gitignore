@@ -1,0 +1,47 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Виртуальное окружение
+.venv/
+venv/
+env/
+
+# PyCharm
+.idea/
+
+# Локальная база и резервные копии
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+data/
+backups/
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Обновления
+updates/
+*.exe
+*.part
+*.old
+
+# Настройки и секреты
+.env
+.env.*
+*.key
+*.pem
+
+# Логи
+*.log
+
+# Временные файлы
+*.tmp
+*.bak
