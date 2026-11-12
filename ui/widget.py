@@ -586,7 +586,7 @@ class AccountantWidget(QMainWindow):
             QMessageBox.information(
                 self,
                 "Нет организаций",
-                "Сначала добавьте организацию."
+                "Сначала добавьте организацию.fffffff"
             )
             return
 
