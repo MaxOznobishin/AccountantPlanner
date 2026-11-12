@@ -1,8 +1,8 @@
 """Light theme for the planner widget and dialogs."""
 
-from pathlib import Path
+from resources import resource_path
 
-_ASSETS = Path(__file__).parent / "assets"
+_ASSETS = resource_path("ui/assets")
 
 STYLESHEET = """
 QWidget { font-family: 'Segoe UI'; font-size: 13px; color: #273247; }

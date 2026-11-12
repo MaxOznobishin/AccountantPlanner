@@ -1,6 +1,6 @@
 """Shared visual style for the planner and its dialogs."""
 
-from pathlib import Path
+from resources import resource_path
 
 STYLESHEET = """
 QWidget { font-family: 'Segoe UI'; font-size: 13px; color: #24334b; }
@@ -64,4 +64,4 @@ QMenu::item { padding: 8px 20px; }
 QMenu::item:selected { background: #e0ecfc; }
 """
 
-STYLESHEET = STYLESHEET.replace("__CHEVRON__", (Path(__file__).parent / "assets" / "chevron-down.svg").as_posix())
+STYLESHEET = STYLESHEET.replace("__CHEVRON__", resource_path("ui/assets/chevron-down.svg").as_posix())

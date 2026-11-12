@@ -7,9 +7,10 @@ import calendar
 import os
 import sys
 import shutil
+from resources import resource_path
 
 
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = resource_path(".")
 
 # Проверяем, запущен исходный Python-код или EXE.
 IS_FROZEN = getattr(sys, "frozen", False)

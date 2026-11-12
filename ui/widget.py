@@ -1,6 +1,6 @@
 
 import sqlite3
-from pathlib import Path
+from resources import resource_path
 from datetime import date, datetime, timedelta
 
 from PySide6.QtCore import Qt, QDate, QTimer, QLocale, QSize
@@ -91,7 +91,7 @@ class TitleBar(QFrame):
         layout.addStretch()
         settings_button = QPushButton()
         settings_button.setObjectName("settingsButton")
-        settings_button.setIcon(QIcon(str(Path(__file__).parent / "assets" / "settings.svg")))
+        settings_button.setIcon(QIcon(str(resource_path("ui/assets/settings.svg"))))
         settings_button.setIconSize(QSize(20, 20))
         settings_button.setFixedSize(34, 34)
         settings_button.setToolTip("Настройки приложения")
@@ -207,7 +207,7 @@ class AccountantWidget(QMainWindow):
         compact_titles.addWidget(compact_title)
         compact_titles.addWidget(self.date_label)
         quick_add = QPushButton()
-        quick_add.setIcon(QIcon(str(Path(__file__).parent / "assets" / "plus.svg")))
+        quick_add.setIcon(QIcon(str(resource_path("ui/assets/plus.svg"))))
         quick_add.setIconSize(QSize(24, 24))
         quick_add.setObjectName("quickAddButton")
         quick_add.setFixedSize(42, 42)

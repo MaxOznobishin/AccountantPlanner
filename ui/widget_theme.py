@@ -1,8 +1,8 @@
 """Compact desktop-widget theme."""
 
-from pathlib import Path
+from resources import resource_path
 
-_ASSETS = Path(__file__).parent / "assets"
+_ASSETS = resource_path("ui/assets")
 
 STYLESHEET = """
 QWidget { font-family: 'Segoe UI'; font-size: 13px; color: #e9edf5; }
